@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Spectral', sans-serif;
+}
+
+.link {
+    text-decoration-line: none;
+    color: white;
+    font-weight: 700;
+}
+
+.link:hover{
+    color: #f77092;
+}
+
+#lawyer-section-image {
+    width: 400px;
+    height: 260px;
+}
+
+header {
+    background-color: #980328;
+}
+
+footer {
+    background-color: #980328;
+    min-height: 400px;
+    height: 400px;
+}
+
+.text-inner-line {
+    color: #980227;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.text-inner-line::before, .text-inner-line::after{
+    background-color: #980227;
+    content: "";
+    display: inline-block;
+    height: 0.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.text-inner-line::before {
+    right: 0.5em;
+    margin-left: -40%;
+}
+
+.text-inner-line::after {
+    left: 0.5em;
+    margin-right: -40%;
+}
+
+.square {
+    border: 1px solid #980227;
+    height: 190px;
+}
+
+.form-style {
+    height: 200px;
+    width: 85%;
+    margin: -30px auto;
+    background-color: white;
+}
+
+.form-title {
+    color: #980227;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+}
+
+
+input[type=text] {
+    background-color: #f6f6f6;
+    color: #628891;
+    font-family: 'Inter', sans-serif;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+input[type=button] {
+    background-color: #980227;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px auto;
+    width: 85%;
+
+}
+
+input[type=button]:hover{
+    background-color: #77021f;
+}
+
+
+.text-title {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.footer-title{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
+.text-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    text-align: justify;
+}
+
+
+.content {
+    margin-top: 5rem;
+}
+
+#hero {
+    background-image: url(/assets/img/forum-1.png);
+    background-size: cover;
+    height: 700px;
+    color: white;
+    font-size: 24px;
+}
+
+#hero h1 {
+    color: #980227;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#hero-image {
+    margin-right: 400px;
+}
+
+#hero-button {
+    color: white; 
+    background-color: #860223; 
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+
+#hero-button:hover{
+    background-color: #77021f;
+}
+
+#about {
+    min-height: 450px;
+    height: 450px;
+}
+
+#lawyer {
+    background-color: #f6f6f6;
+    min-height: 450px;
+    height: 450px;
+}
+
+#work {
+    min-height: 600px;
+    height: 600px;
+
+}
+
+#lawyer-info {
+    list-style-type: square;
+}
+/*Responsive*/
+
+@media only screen and (max-width: 576px) {
+    #hero {
+        font-size: 14px;
+        text-align: center;
+        height: 600px;
+    }
+    
+    #hero h1 {
+        font-size: 32px;
+        
+    }
+    
+    
+    #hero-button {
+        color: white; 
+        background-color: #860223; 
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
+    
+    #hero-button:hover{
+        background-color: #77021f;
+    }
+
+    .link {
+        text-decoration-line: none;
+        color: white;
+        font-weight: 700;
+    }
+    
+    .link:hover{
+        color: #f77092;
+    }
+    
+    #lawyer-section-image {
+        width: 350px;
+        height: 210px;
+        margin: 50px 10px 20px 10px;
+    }
+    
+    
+    header {
+        background-color: #980328;
+    }
+    
+    footer {
+        background-color: #980328;
+        min-height: 400px;
+        height: 400px;
+    }
+    
+    .text-inner-line {
+        color: #980227;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .text-inner-line::before, .text-inner-line::after{
+        background-color: #980227;
+        content: "";
+        display: inline-block;
+        height: 0.5px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    
+    .text-inner-line::before {
+        right: 0.5em;
+        margin-left: -40%;
+    }
+    
+    .text-inner-line::after {
+        left: 0.5em;
+        margin-right: -40%;
+    }
+    
+    .square {
+        border: 1px solid #980227;
+        height: 190px;
+    }
+    
+    .form-style {
+        height: 200px;
+        width: 85%;
+        margin: -30px auto;
+        background-color: white;
+    }
+    
+    .form-title {
+        color: #980227;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    input {
+        text-transform: uppercase;
+        font-size: 14px;
+        border: none;
+    }
+    
+    
+    input[type=text] {
+        background-color: #f6f6f6;
+        color: #628891;
+        font-family: 'Inter', sans-serif;
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+    }
+    
+    input[type=button] {
+        background-color: #980227;
+        color: white;
+        padding: 15px 30px;
+        margin: 10px auto;
+        width: 85%;
+    
+    }
+    
+    
+    .text-title {
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+
+    
+    
+    .text-description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        text-align: justify;
+    }
+    
+    #about {
+        min-height: 450px;
+        height: 450px;
+    }
+    
+    #lawyer {
+        background-color: #f6f6f6;
+        min-height: 450px;
+        height: 450px;
+    }
+    
+    #work {
+        min-height: 600px;
+        height: 600px;
+    }
+    
+}
+
+
+
