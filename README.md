@@ -5,7 +5,7 @@
 
 ![](https://github.com/antoniomarcelino/law-firm-landing-page/blob/master/assets/img/preview-en.png)
 
-**View project live** [here](https://law-firm-landing-page.vercel.app) 
+**View project live** [here](https://landing-page-advocacia.vercel.app) 
 
 **Technologies used in this project**
 * HTML
