@@ -1,10 +1,11 @@
-# Landing page de advocacia
+# Law Firm Landing Page
 
-![](https://github.com/antoniomarcelino/landing-page-advocacia/blob/master/assets/img/preview.png)
+![](https://github.com/antoniomarcelino/law-firm-landing-page/blob/master/assets/img/preview-en.png)
 
-**Acessar projeto** [aqui](https://landing-page-advocacia.vercel.app) 
+**View project live** [here](https://law-firm-landing-page.vercel.app) 
 
-**Tecnologias usadas no projeto**
+**Technologies used in this project**
 * HTML
 * CSS
 * Bootstrap
+* Font Awesome

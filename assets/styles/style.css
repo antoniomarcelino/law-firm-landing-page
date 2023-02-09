@@ -5,41 +5,115 @@
     font-family: 'Spectral', sans-serif;
 }
 
-.link {
-    text-decoration-line: none;
-    color: white;
-    font-weight: 700;
-}
-
-.link:hover{
-    color: #f77092;
-}
-
-#lawyer-section-image {
-    width: 400px;
-    height: 260px;
-}
-
-header {
-    background-color: #980328;
+:root {
+    --white: #fff;
+    --pink:  #f77092;
+    --wine:  #980328;
+    --darkwine: #77021f;
+    --grey:  #628891;
+    --light-grey: #f0f0f0;
 }
 
 footer {
-    background-color: #980328;
+    background-color: var(--wine);
     min-height: 400px;
     height: 400px;
 }
 
-.text-inner-line {
-    color: #980227;
+header {
+    background-color: var(--wine);
+}
+
+input {
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 0.9rem;
+    border: none;
+}
+
+
+input[type=text] {
+    background-color: var(--light-grey);
+    color: var(--grey);
+    font-family: 'Inter', sans-serif;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+input[type=button] {
+    background-color: var(--wine);
+    color: var(--white);
+    padding: 15px 30px;
+    margin: 10px auto;
+    width: 85%;
+
+}
+
+input[type=button]:hover{
+    background-color: var(--darkwine);
+}
+
+.content {
+    margin-top: 5rem;
+}
+
+.footer-title{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.form-style {
+    height: 200px;
+    width: 85%;
+    margin: -30px auto;
+    background-color: var(--white);
+}
+
+.form-title {
+    color: var(--wine);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration-line: none;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.link:hover{
+    color: var(--pink);
+}
+
+.square {
+    border: 1px solid var(--wine);
+    height: 11.9rem;
+}
+
+.text-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    text-align: justify;
+}
+
+.text-inner-line {
+    color: var(--wine);
+    text-transform: uppercase;
+    font-size: 1.3rem;
     text-align: center;
     overflow: hidden;
 }
 
 .text-inner-line::before, .text-inner-line::after{
-    background-color: #980227;
+    background-color: var(--wine);
     content: "";
     display: inline-block;
     height: 0.5px;
@@ -58,115 +132,12 @@ footer {
     margin-right: -40%;
 }
 
-.square {
-    border: 1px solid #980227;
-    height: 190px;
-}
-
-.form-style {
-    height: 200px;
-    width: 85%;
-    margin: -30px auto;
-    background-color: white;
-}
-
-.form-title {
-    color: #980227;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-input {
-    text-transform: uppercase;
-    font-size: 14px;
-    border: none;
-}
-
-
-input[type=text] {
-    background-color: #f6f6f6;
-    color: #628891;
-    font-family: 'Inter', sans-serif;
-    padding: 5px 10px;
-    margin: 5px 10px;
-}
-
-input[type=button] {
-    background-color: #980227;
-    color: white;
-    padding: 15px 30px;
-    margin: 10px auto;
-    width: 85%;
-
-}
-
-input[type=button]:hover{
-    background-color: #77021f;
-}
-
-
 .text-title {
     text-align: left;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
     margin: 25px 0;
-}
-
-.footer-title{
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 24px;
-    color: white;
-    font-weight: 700;
-    margin: 10px 0;
-}
-
-
-.text-description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.7px;
-    text-align: justify;
-}
-
-
-.content {
-    margin-top: 5rem;
-}
-
-#hero {
-    background-image: url(/assets/img/forum-1.png);
-    background-size: cover;
-    height: 700px;
-    color: white;
-    font-size: 24px;
-}
-
-#hero h1 {
-    color: #980227;
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#hero-image {
-    margin-right: 400px;
-}
-
-#hero-button {
-    color: white; 
-    background-color: #860223; 
-    border: 1px solid white;
-    text-transform: uppercase;
-}
-
-#hero-button:hover{
-    background-color: #77021f;
 }
 
 #about {
@@ -174,55 +145,101 @@ input[type=button]:hover{
     height: 450px;
 }
 
-#lawyer {
-    background-color: #f6f6f6;
-    min-height: 450px;
-    height: 450px;
+#hero h1 {
+    color: var(--wine);
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-#work {
-    min-height: 600px;
-    height: 600px;
+#hero {
+    background-image: url(/assets/img/forum-1.png);
+    background-size: cover;
+    height: 700px;
+    color: var(--white);
+    font-size: 1.5rem;
+}
 
+#hero-button {
+    color: var(--white); 
+    background-color: #860223; 
+    border: 1px solid var(--white);
+    text-transform: uppercase;
+}
+
+#hero-button:hover{
+    background-color: var(--darkwine);
+}
+
+#hero-image {
+    margin-right: 400px;
+    width: 900px;
+    height: 600px;
+}
+
+#lawyer {
+    background-color: var(--light-grey);
+    min-height: 450px;
+    height: 450px;
 }
 
 #lawyer-info {
     list-style-type: square;
 }
-/*Responsive*/
+
+#lawyer-section-image {
+    width: 400px;
+    height: 260px;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+#work {
+    min-height: 600px;
+    height: 600px;
+}
+
+/* '******************************************************************************* */
+/* '*******************              RESPONSIVE          ************************** */
+/* '******************************************************************************* */
 
 @media only screen and (max-width: 576px) {
+
+    input {
+        font-size: 0.8rem;
+    }
+    
+    .text-inner-line {
+        font-size: 1.2rem;
+    }
+    
+    .square {
+        height: 11rem;
+    }
+    
+    
+    .form-title {
+        font-size: 1.2rem;
+    }
+
+    .text-title {
+        font-size: 1.2rem;
+    }
+
+    .text-description {
+        font-size: 0.8rem;
+    }
+
     #hero {
-        font-size: 14px;
-        text-align: center;
-        height: 600px;
+        font-size: 0.8rem;
     }
     
     #hero h1 {
-        font-size: 32px;
-        
-    }
-    
-    
-    #hero-button {
-        color: white; 
-        background-color: #860223; 
-        border: 1px solid white;
-        text-transform: uppercase;
-    }
-    
-    #hero-button:hover{
-        background-color: #77021f;
-    }
+        font-size: 2rem;
 
-    .link {
-        text-decoration-line: none;
-        color: white;
-        font-weight: 700;
-    }
-    
-    .link:hover{
-        color: #f77092;
     }
     
     #lawyer-section-image {
@@ -231,117 +248,7 @@ input[type=button]:hover{
         margin: 50px 10px 20px 10px;
     }
     
-    
-    header {
-        background-color: #980328;
-    }
-    
-    footer {
-        background-color: #980328;
-        min-height: 400px;
-        height: 400px;
-    }
-    
-    .text-inner-line {
-        color: #980227;
-        text-transform: uppercase;
-        font-size: 18px;
-        text-align: center;
-        overflow: hidden;
-    }
-    
-    .text-inner-line::before, .text-inner-line::after{
-        background-color: #980227;
-        content: "";
-        display: inline-block;
-        height: 0.5px;
-        position: relative;
-        vertical-align: middle;
-        width: 50%;
-    }
-    
-    .text-inner-line::before {
-        right: 0.5em;
-        margin-left: -40%;
-    }
-    
-    .text-inner-line::after {
-        left: 0.5em;
-        margin-right: -40%;
-    }
-    
-    .square {
-        border: 1px solid #980227;
-        height: 190px;
-    }
-    
-    .form-style {
-        height: 200px;
-        width: 85%;
-        margin: -30px auto;
-        background-color: white;
-    }
-    
-    .form-title {
-        color: #980227;
-        font-size: 18px;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    
-    input {
-        text-transform: uppercase;
-        font-size: 14px;
-        border: none;
-    }
-    
-    
-    input[type=text] {
-        background-color: #f6f6f6;
-        color: #628891;
-        font-family: 'Inter', sans-serif;
-        padding: 5px;
-        margin: 5px;
-        width: 100%;
-    }
-    
-    input[type=button] {
-        background-color: #980227;
-        color: white;
-        padding: 15px 30px;
-        margin: 10px auto;
-        width: 85%;
-    
-    }
-    
-    
-    .text-title {
-        text-align: left;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        margin: 20px 0;
-    }
-
-    
-    
-    .text-description {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0.5px;
-        text-align: justify;
-    }
-    
     #about {
-        min-height: 450px;
-        height: 450px;
-    }
-    
-    #lawyer {
-        background-color: #f6f6f6;
         min-height: 450px;
         height: 450px;
     }
